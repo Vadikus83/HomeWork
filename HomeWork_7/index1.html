@@ -1,0 +1,119 @@
+<!-- Ну держитесь) Домашнее задание №4. Задание: 1. Сверстать по макету, соблюдая размеры, отступы и стили 
+(картинку с лого можно использовать свою или экспортировать мою из фигмы). 2. Добавить эффекты при наведении 
+на карточки товаров и ссылки 3. Использовать flex 4. Картинки и заголовки товаров можно использовать свои 
+5. НЕ использовать position: absolute -->
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="fonds/fonds.css" type="text/css" rel="stylesheet">
+        <title>Homework 5, Интернет-магазин</title>
+    </head>
+    <body>
+        
+        <header>
+            <section class="header_cont">
+                <section><img class="logo_header" src="img/logo.png"></section>
+                <section ><h1 class="h1_header" >Интернет-магазин</h1></section>
+                <nav class="nav__menu">
+                    <ul class="nav-menu__ul">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index1.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="nav__mobail">
+                <nav class="nav__menu__mobail">
+                    <ul class="nav__menu__mobail__ul">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index1.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+            <main>
+                <section class="contact">
+                    <h1 id="contact__h1">Обратная связь</h1>
+                    <form class="input-form">
+                        <div class="form__control">
+                            <input type="text" id="input__name" class="input" name="input__name" placeholder="Введите имя">
+                        </div>
+                        <div class="form__control">
+                            <input type="text" id="input__name" class="input" name="input__name" placeholder="Введите Email">
+                        </div>
+                        <div class="form__control">
+                            <label for="form__radio-group">Пол</label>
+                            <div class="form__radio-group">
+                                <input class="form__radio" type="radio" id="radio__buttom" name="sex" value="man">
+                                <label class="form__label" for="input-3">Мужчина</label>
+                            </div>
+                            <div class="form__radio-group">
+                                <input class="form__radio" type="radio" id="radio__buttom" name="sex" value="woman">
+                                <label class="form__label" for="input-3">Женщина</label>
+                                </div>
+                        </div>
+                        <div class="form__control">
+                            <textarea rows="5" type="text" class="input" name="massage" id="input__text" required placeholder="Введите сообщение..."></textarea>
+                        </div>
+                        <div class="form__control">
+                            <input class="checkbox" type="checkbox" checked="checked">
+                            <label class="container">Принимаю условия <a href="#">пользовательского соглашения</a></label>
+                        </div>
+                        <div class="form__control buttom">
+                            <button class="form__buttom form__buttom__submit" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <div class="page_footer">
+                    <section class="nav">
+                        <ul class="footer_menu">
+                            <li class="heading_nav">Категории товаров</li>
+                            <li><a href="#">Бытовая техника</a></li>
+                            <li><a href="#">Электроника</a></li> 
+                            <li><a href="#">Одежда</a></li> 
+                            <li><a href="#">Обувь</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                        </ul>
+                    </section>
+                    <section class="nav">
+                        <ul class="footer_menu">
+                            <li class="heading_nav">Разделы сайта</li>
+                            <li><a href="#">Магазиин</a></li>
+                            <li><a href="#">Контакты</a></li> 
+                            <li><a href="#">Блог</a></li> 
+                            <li><a href="#">Политика конфедициальности</a></li>
+                            <li><a href="#">Договор оферты</a></li>
+                            <li><a href="#">О нас</a></li> 
+                        </ul>
+                    </section>
+                    <section class="nav">
+                        <ul class="footer_menu">
+                            <li class="heading_nav">Полезные ссылки</li>
+                            <li><a href="#">Google.com</a></li>
+                            <li><a href="#">Yandex.ru</li<a></li> 
+                            <li><a href="#">developer.mozilla.org</a></li> 
+                            <li><a href="#">mdn.</a></li>
+                        </ul>
+                    </section>
+                    <section class="box_logo_footer">
+                        <Section>
+                            <img class="logo_footer" src="img/logo.png"><br>
+                        </Section>
+                        <section>
+                            <p class="logo_futer_2">(с)Интернет-магазин 2022</p>
+                        </section>
+                    </section>
+                </div>
+            </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,72 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.square {
+    background: blue;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    transition: $d-hover opacity;
+    cursor: pointer;
+
+    &__header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: yellow;
+    }
+
+    // &:hover {
+    //     opacity: .7;
+    // }
+
+    &__footer {
+        position: absolute;
+        bottom: 0;
+        background: green;
+        height: 100px;
+        left: 0;
+        width: 100%;
+    
+    }
+}
+
+.button {
+    background: black;
+    border-radius: 0;
+    border: none;
+    padding: 8px 12px;
+    color: brown;
+    outline: none;
+    transition: $d-hover opacity;
+    border: $border;
+
+    &:hover {
+        opacity: $v-hoverOpasity;
+
+    }
+
+.square__header & {
+    background: magenta;
+}
+
+.square__footer & {
+    background: lime;
+    color: black;
+}
+
+.isTouch & {
+    background: rgb(164, 164, 250);
+}
+
+}
+
+.input-wrapper {
+    position: relative;
+
+    input {
+        @include mixin-absolute($opacity: 0);
+    }
+}
