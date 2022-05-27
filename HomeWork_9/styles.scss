@@ -1,3 +1,6 @@
+@use './variables' as *;
+@use './mixins' as *;
+
 body {
   background-image: url(img/body.jpg);
 }
@@ -16,20 +19,25 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   padding: 30px;
+
+  &__foto {
+    width: 300px;
+    height: 300px;
+    border: $border; 
+    overflow: hidden;
+    -webkit-transition: $d-transform;
+          transition: $d-transform;
+  }
+
+  &__foto:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
-.bodyWebsite__foto {
-  width: 300px;
-  height: 300px;
-  border: 4px double #bd6c46;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.bodyWebsite__foto:hover {
-  border-radius: 50%;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
+
+// **************************************************Форма обратной связи начало********************************************************
+
 
 #contact__h1 {
   color: #000000;
@@ -49,6 +57,7 @@ body {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   padding: 20px;
+  
 }
 
 .input {
@@ -56,10 +65,11 @@ body {
   border: none;
   color: #000000;
   padding: 10px;
+
 }
 
 .input::placeholder {
-  color: #A39F9F;
+  color: #A39F9F
 }
 
 .input:focus {
@@ -67,17 +77,13 @@ body {
 }
 
 #input__name {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  width: 100%;
-  height: 30px;
+
+  @include imput-name;
 }
 
 #input__text {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  width: 100%;
-  height: 150px;
+  @include imput-text;
+
 }
 
 #radio__buttom {
@@ -103,17 +109,7 @@ body {
 }
 
 .form__buttom {
-  background: #03ed41;
-  color: #000;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  position: 0.2s opacity;
-  position: absolute;
-  width: 228px;
-  height: 53px;
-  cursor: pointer;
+  @include button-form;
 }
 
 .form__control a {
@@ -121,10 +117,10 @@ body {
   color: #000;
   font-size: 14px;
   line-height: 16px;
-}
+  }
+  
+  .form__control a:hover {
+    color: #EDD603;
+  }
 
-.form__control a:hover {
-  color: #EDD603;
-}
-
-/*# sourceMappingURL=style.css.map */
+  // **************************************************Форма обратной связи конец********************************************************

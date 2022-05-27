@@ -1,27 +1,76 @@
+<!-- Ну держитесь) Домашнее задание №4. Задание: 1. Сверстать по макету, соблюдая размеры, отступы и стили 
+(картинку с лого можно использовать свою или экспортировать мою из фигмы). 2. Добавить эффекты при наведении 
+на карточки товаров и ссылки 3. Использовать flex 4. Картинки и заголовки товаров можно использовать свои 
+5. НЕ использовать position: absolute -->
+
 <!DOCTYPE html>
-<html lang="ru" class="isTouch">
-<head>
-    <meta charset="UTF-8">
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="dist/style.css">
         <link rel="stylesheet" type="text/css" href="fonds/fonds.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <title>Homework 12, Интернет-магазин</title>
-</head>
-<body>
-    <div class="square">
-        <div class="square__header">
-            <button class="button">Хедер</button>
-        </div>
-        <div class="square__footer">
-            <button class="button">Футер</button>
-            <div class="input-wrapper">
-                <input type="checkbox">
-                <label>Чекбокс</label>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>Homework 7, Интернет-магазин</title>
+    </head>
+    <body>
+        <section class="head">
+            <div class="head__heading">
+                <h1>Домашка №9, импользуем scss</h1>
             </div>
+        </section>
+        <section class="bodyWebsite">
+            <div class="bodyWebsite__foto">
+                <img src="img/dog.jpg" alt="" />
+            </div>
+            <div class="bodyWebsite__foto">
+                <img src="img/zveri.jpg" alt="" />
+            </div>
+            <div class="bodyWebsite__foto">
+                <img src="img/puma.jpg" alt="" />
+            </div>
+            <div class="bodyWebsite__foto">
+                <img src="img/belka.jpg" alt="" />
+            </div>
+        </section>
+        
+        
+        <div class="fopma">
+            <section class="contact">
+                <h1 id="contact__h1">Обратная связь</h1>
+                <form class="input-form">
+                    <div class="form__control">
+                        <input type="text" id="input__name" class="input" name="input__name" placeholder="Введите имя">
+                    </div>
+                    <div class="form__control">
+                        <input type="text" id="input__name" class="input" name="input__name" placeholder="Введите Email">
+                    </div>
+                    <div class="form__control">
+                        <label for="form__radio-group">Пол</label>
+                        <div class="form__radio-group">
+                            <input class="form__radio" type="radio" id="radio__buttom" name="sex" value="man">
+                            <label class="form__label" for="input-3">Мужчина</label>
+                        </div>
+                        <div class="form__radio-group">
+                            <input class="form__radio" type="radio" id="radio__buttom" name="sex" value="woman">
+                            <label class="form__label" for="input-3">Женщина</label>
+                            </div>
+                    </div>
+                    <div class="form__control">
+                        <textarea rows="5" type="text" class="input" name="massage" id="input__text" required placeholder="Введите сообщение..."></textarea>
+                    </div>
+                    <div class="form__control">
+                        <input class="checkbox" type="checkbox" checked="checked">
+                        <label class="container">Принимаю условия <a href="#">пользовательского соглашения</a></label>
+                    </div>
+                    <div class="form__control buttom">
+                        <button class="form__buttom form__buttom__submit" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </section>
         </div>
-    </div>
-</body>
+    </body>
 </html>
