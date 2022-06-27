@@ -1,0 +1,140 @@
+  /* Обнуляем стили */
+*{
+    box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+  /* text-decoration: underline; */
+}
+
+
+body{
+  margin-left: 30px;
+  /* overflow: hidden;  Выравние текста по ширине экрана, устраниение горизонтального скролинга */
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+  /* display: block;
+  align-items: center
+  } */
+  display: flex;
+  justify-content: center;
+  
+a{
+  color: #FF710B;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Стилизация шапки сайта начало */
+
+.header_book{
+  width: 1440px;
+  height: 89px;
+  background: #590bff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  /* position: sticky;
+  top: 0; */
+}
+header{
+  position: sticky;
+  top: 0;
+}
+
+#header_h1{
+  width: 403px;
+  height: 63px;
+  font-size: 54px;
+  font-weight: 400;
+  color: #fff;
+  font-family: roboto;
+  line-height: normal;
+  margin-top: 13px;
+  margin-left: 29px;
+}
+
+/* Стилизация шапки сайта начало */
+
+/* Стили всего тело начало */
+main{
+  width: 1440px;
+  height: 844px;
+  border: 1px solid #000000;
+}
+
+/* .content, .sidebars{
+  display: inline-block;
+} */
+
+/* Стили всего тело начало */
+
+/* Контент оба меню начало */
+
+.content{
+  float: left;
+  width: 1080px;
+  height: 699px;
+  /* padding-top: 47px;
+  padding-left: 36px; */
+  padding: 47px 0 0 16px;
+}
+
+.heading_nav{
+  width: 1080px;
+  height: 41px;
+  display: block;
+  background-color: #590bff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  color: #ffffff;
+  padding-top: 4px;
+  padding-left: 13px;
+  position: sticky;
+  top: 89px;
+}
+
+li{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 13px;
+  padding: 6px;
+  display: block;
+  text-decoration: none;
+    
+
+}
+
+.nav a{  
+  color: #000; }
+
+/* Контент оба меню конец */
+
+/* Сайтбар начало  */
+.sidebars{
+  padding: 47px 0 0 5px;
+  float: left;
+  font-family: roboto;
+  line-height: 33px;
+}
+
+.sidebar_heading{
+  color: #000000;
+  font-size: 28px;
+}
+
+.box_sidebars{
+  width: 282px;
+  height: 457px;
+  display: block;
+  padding: 5px 18px 0 18px;
+  border-right: 2px solid #c4c4c4;
+}
+
+/* Сайтбар начало  */
